@@ -1,0 +1,49 @@
+<office:document-styles grddl:transformation="19.320" office:version="19.386">
+    <office:automatic-styles>
+        <number:boolean-style> 16.27.23
+        <number:currency-style> 16.27.7
+        <number:date-style> 16.27.10
+        <number:number-style> 16.27.2
+        <number:percentage-style> 16.27.9
+        <number:text-style> 16.27.25
+        <number:time-style> 16.27.18
+        <style:page-layout> 16.5
+        <style:style> 16.2
+        <text:list-style> 16.30
+    </office:automatic-styles>
+    <office:font-face-decls>
+        <style:font-face> 16.21
+    </office:font-face-decls>
+    <office:master-styles>
+        <draw:layer-set> 10.2.2
+        <style:handout-master> 10.2.1
+        <style:master-page> 16.9
+    </office:master-styles>
+    <office:styles>
+        <draw:fill-image> 16.40.6
+        <draw:gradient> 16.40.1
+        <draw:hatch> 16.40.5
+        <draw:marker> 16.40.8
+        <draw:opacity> 16.40.7
+        <draw:stroke-dash> 16.40.9
+        <number:boolean-style> 16.27.23
+        <number:currency-style> 16.27.7
+        <number:date-style> 16.27.10
+        <number:number-style> 16.27.2
+        <number:percentage-style> 16.27.9
+        <number:text-style> 16.27.25
+        <number:time-style> 16.27.18
+        <style:default-page-layout> 16.8
+        <style:default-style> 16.4
+        <style:presentation-page-layout> 16.41
+        <style:style> 16.2
+        <svg:linearGradient> 16.40.2
+        <svg:radialGradient> 16.40.3
+        <table:table-template> 16.18
+        <text:bibliography-configuration> 16.29.6
+        <text:linenumbering-configuration> 16.29.1
+        <text:list-style> 16.30
+        <text:notes-configuration> 16.29.3
+        <text:outline-style> 16.34
+    </office:styles>
+</office:document-styles>

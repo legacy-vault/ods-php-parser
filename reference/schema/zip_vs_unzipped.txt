@@ -1,0 +1,53 @@
+----------------------------------------------------------------
+When not-zipped:
+----------------------------------------------------------------
+
+<office:document>
+grddl:transformation 19.320
+office:mimetype 19.375
+office:version 19.386
+
+    <office:automatic-styles> 3.15.3
+    <office:body> 3.3
+    <office:font-face-decls> 3.14
+    <office:master-styles> 3.15.4
+    <office:meta> 3.2
+    <office:scripts> 3.12
+    <office:settings> 3.10
+    <office:styles> 3.15.2
+
+----------------------------------------------------------------
+When zipped:
+----------------------------------------------------------------
+
+<office:document-content>   // content.xml
+grddl:transformation 19.320
+office:version 19.386
+
+    <office:automatic-styles> 3.15.3
+    <office:body> 3.3
+    <office:font-face-decls> 3.14
+    <office:scripts> 3.12
+
+<office:document-styles>    // styles.xml
+grddl:transformation 19.320
+office:version 19.386
+
+    <office:automatic-styles> 3.15.3
+    <office:font-face-decls> 3.14
+    <office:master-styles> 3.15.4 
+    <office:styles> 3.15.2
+
+<office:document-meta>      // meta.xml
+grddl:transformation 19.320
+office:version 19.386
+
+    <office:meta> 3.2
+
+<office:document-settings>  // settings.xml
+grddl:transformation 19.320
+office:version 19.386
+
+    <office:settings> 3.10
+    
+----------------------------------------------------------------

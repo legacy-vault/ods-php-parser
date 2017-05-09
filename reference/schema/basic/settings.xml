@@ -1,0 +1,32 @@
+<office:document-settings grddl:transformation="19.320" office:version="19.386">
+    <office:settings>
+        <config:config-item-set config:name="19.29">
+            <config:config-item config:name="19.29" config:type="19.30">
+            </config:config-item>
+            <config:config-item-map-indexed config:name="19.29">
+                <config:config-item-map-entry config:name="19.29">
+                    <config:config-item>
+                        (...)
+                    </config:config-item>
+                    <config:config-item-map-indexed>
+                        (...)
+                    </config:config-item-map-indexed>
+                    <config:config-item-map-named>
+                        (...)
+                    </config:config-item-map-named>
+                    <config:config-item-set>
+                        (...)
+                    </config:config-item-set>
+                </config:config-item-map-entry>
+            </config:config-item-map-indexed>
+            <config:config-item-map-named config:name="19.29">
+                <config:config-item-map-entry>
+                    (...)
+                </config:config-item-map-entry>
+            </config:config-item-map-named>
+            <config:config-item-set>
+                (...)
+            </config:config-item-set>
+        </config:config-item-set>
+    </office:settings>
+</office:document-settings>

@@ -1,0 +1,190 @@
+<office:document-content grddl:transformation="19.320" office:version="19.386">
+    <office:automatic-styles>
+        <number:boolean-style> 16.27.23
+        <number:currency-style> 16.27.7
+        <number:date-style> 16.27.10
+        <number:number-style> 16.27.2
+        <number:percentage-style> 16.27.9
+        <number:text-style> 16.27.25
+        <number:time-style> 16.27.18
+        <style:page-layout> 16.5
+        <style:style> 16.2
+        <text:list-style> 16.30
+    </office:automatic-styles>
+    <office:body>
+        <office:spreadsheet table:protection-key="19.697" table:protection-key-digest-algorithm="19.698" table:structure-protected="19.725">
+            <table:calculation-settings> 9.4.1
+            <table:consolidation> 9.7
+            <table:content-validations> 9.4.4
+            <table:database-ranges> 9.4.14
+            <table:data-pilot-tables> 9.6.2
+            <table:dde-links> 9.8
+            <table:label-ranges> 9.4.10
+            <table:named-expressions> 9.4.11
+            <table:table table:is-sub-table="19.655" table:name="19.673.13" table:print="19.693" table:print-ranges="19.694" table:protected="19.696.4" table:protection-key="19.697" table:protection-key-digest-algorithm="19.698" table:style-name="19.726.16" table:template-name="19.732" table:use-banding-columns-styles="19.736" table:use-banding-rows-styles="19.737" table:use-first-column-styles="19.738" table:use-first-row-styles="19.739" table:use-last-column-styles="19.740" table:use-last-row-styles="19.741" xml:id="19.914">
+                <office:dde-source> 14.6.5
+                <office:forms> 13.2
+                <table:desc>
+                </table:desc>
+                <table:named-expressions> 9.4.11
+                <table:scenario> 9.2.7
+                <table:shapes> 9.2.8
+                <table:table-column table:default-cell-style-name="19.615" table:number-columns-repeated="19.675.4" table:style-name="19.726.14" table:visibility="19.749" xml:id="19.914">
+                </table:table-column>
+                <table:table-column-group table:display="19.617">
+                    <table:table-column>
+                        (...)
+                    </table:table-column>
+                    <table:table-column-group>
+                        (...)
+                    </table:table-column-group>
+                    <table:table-columns>
+                        (...)
+                    </table:table-columns>
+                    <table:table-header-columns>
+                        (...)
+                    </table:table-header-columns>
+                </table:table-column-group>
+                <table:table-columns>
+                    <table:table-column>
+                        (...)
+                    </table:table-column>
+                </table:table-columns>
+                <table:table-header-columns>
+                    <table:table-column>
+                        (...)
+                    </table:table-column>
+                </table:table-header-columns>
+                <table:table-header-rows>
+                    <table:table-row>
+                        (...)
+                    </table:table-row>
+                    <text:soft-page-break> 5.6
+                </table:table-header-rows>
+                <table:table-row table:default-cell-style-name="19.615" table:number-rows-repeated="19.677" table:style-name="19.726.15" table:visibility="19.749" xml:id="19.914">
+                    <table:covered-table-cell office:boolean-value="19.367" office:currency="19.369" office:date-value="19.370" office:string-value="19.379" office:time-value="19.382" office:value="19.384" office:value-type="19.385" table:content-validation-name="19.601" table:formula="19.642" table:number-columns-repeated="19.675.2" table:protect="19.695" table:protected="19.696.2" table:style-name="19.726.4" xhtml:about="19.905" xhtml:content="19.906" xhtml:datatype="19.907" xhtml:property="19.908" xml:id="19.914">
+                        <dr3d:scene> 10.5.2
+                        <draw:a> 10.4.12
+                        <draw:caption> 10.3.11
+                        <draw:circle> 10.3.8
+                        <draw:connector> 10.3.10
+                        <draw:control> 10.3.13
+                        <draw:custom-shape> 10.6.1
+                        <draw:ellipse> 10.3.9
+                        <draw:frame> 10.4.2
+                        <draw:g> 10.3.15
+                        <draw:line> 10.3.3
+                        <draw:measure> 10.3.12
+                        <draw:page-thumbnail> 10.3.14
+                        <draw:path> 10.3.7
+                        <draw:polygon> 10.3.5
+                        <draw:polyline> 10.3.4
+                        <draw:rect> 10.3.2
+                        <draw:regular-polygon> 10.3.6
+                        <office:annotation> 14.1
+                        <table:cell-range-source> 9.3.1
+                        <table:detective> 9.3.2
+                        <table:table> 9.1.2
+                        <text:alphabetical-index> 8.8
+                        <text:bibliography> 8.9
+                        <text:change> 5.5.7.4
+                        <text:change-end> 5.5.7.3
+                        <text:change-start> 5.5.7.2
+                        <text:h> 5.1.2
+                        <text:illustration-index> 8.4
+                        <text:list> 5.3.1
+                        <text:numbered-paragraph> 5.3.6
+                        <text:object-index> 8.6
+                        <text:p> 5.1.3
+                        <text:section> 5.4
+                        <text:soft-page-break> 5.6
+                        <text:table-index> 8.5
+                        <text:table-of-content> 8.3
+                        <text:user-index> 8.7
+                    </table:covered-table-cell>
+                    <table:table-cell office:boolean-value="19.367" office:currency="19.369" office:date-value="19.370" office:string-value="19.379" office:time-value="19.382" office:value="19.384" office:value-type="19.385" table:content-validation-name="19.601" table:formula="19.642" table:number-columns-repeated="19.675.3" table:number-columns-spanned="19.676" table:number-matrix-columns-spanned="19.679" table:number-matrix-rows-spanned="19.680" table:number-rows-spanned="19.678" table:protect="19.695" table:protected="19.696.5" table:style-name="19.726.13" xhtml:about="19.905" xhtml:content="19.906" xhtml:datatype="19.907" xhtml:property="19.908=" xml:id="19.914">
+                        <dr3d:scene> 10.5.2
+                        <draw:a> 10.4.12
+                        <draw:caption> 10.3.11
+                        <draw:circle> 10.3.8
+                        <draw:connector> 10.3.10
+                        <draw:control> 10.3.13
+                        <draw:custom-shape> 10.6.1
+                        <draw:ellipse> 10.3.9
+                        <draw:frame> 10.4.2
+                        <draw:g> 10.3.15
+                        <draw:line> 10.3.3
+                        <draw:measure> 10.3.12
+                        <draw:page-thumbnail> 10.3.14
+                        <draw:path> 10.3.7
+                        <draw:polygon> 10.3.5
+                        <draw:polyline> 10.3.4
+                        <draw:rect> 10.3.2
+                        <draw:regular-polygon> 10.3.6
+                        <office:annotation> 14.1
+                        <table:cell-range-source> 9.3.1
+                        <table:detective> 9.3.2
+                        <table:table>
+                            (...)
+                        </table:table>
+                        <text:alphabetical-index> 8.8
+                        <text:bibliography> 8.9
+                        <text:change> 5.5.7.4
+                        <text:change-end> 5.5.7.3
+                        <text:change-start> 5.5.7.2
+                        <text:h> 5.1.2
+                        <text:illustration-index> 8.4
+                        <text:list> 5.3.1
+                        <text:numbered-paragraph> 5.3.6
+                        <text:object-index> 8.6
+                        <text:p> 5.1.3
+                        <text:section> 5.4
+                        <text:soft-page-break> 5.6
+                        <text:table-index> 8.5
+                        <text:table-of-content> 8.3
+                        <text:user-index> 8.7
+                    </table:table-cell>
+                </table:table-row>
+                <table:table-row-group table:display="19.617">
+                    <table:table-header-rows>
+                        (...)
+                    </table:table-header-rows>
+                    <table:table-row>
+                        (...)
+                    </table:table-row>
+                    <table:table-row-group>
+                        (...)
+                    </table:table-row-group>
+                    <table:table-rows>
+                        (...)
+                    </table:table-rows>
+                    <text:soft-page-break> 5.6
+                </table:table-row-group>
+                <table:table-rows>
+                    <table:table-row>
+                        (...)
+                    </table:table-row>
+                    <text:soft-page-break> 5.6
+                </table:table-rows>
+                <table:table-source> 9.2.6
+                <table:title>
+                </table:title>
+                <text:soft-page-break> 5.6
+            </table:table>
+            <table:tracked-changes> 9.9.2
+            <text:alphabetical-index-auto-mark-file> 8.8.3
+            <text:dde-connection-decls> 14.6.2
+            <text:sequence-decls> 7.4.11
+            <text:user-field-decls> 7.4.7
+            <text:variable-decls> 7.4.2
+        </office:spreadsheet>
+    </office:body>
+    <office:font-face-decls>
+        <style:font-face> 16.21
+    </office:font-face-decls>
+    <office:scripts>
+        <office:event-listeners> 10.3.19
+        <office:script script:language="19.430">
+        </office:script>
+    </office:scripts>
+</office:document-content>

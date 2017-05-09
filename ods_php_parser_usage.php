@@ -25,13 +25,16 @@ $my_ods;
 $result;
 $k;
 $v;
-$i;
-$j;
+$i; $i_max;
+$j; $j_max;
 $val;
+$range;
+$bg;
 
 
 echo "<!DOCTYPE html><html><head><meta charset='utf-8'></head><body>\r\n";
 
+//---------------------------------------
 
 // Open
 $my_ods = new ODS();
@@ -42,10 +45,12 @@ if ($result == FALSE)
     return;
 }
 
+//---------------------------------------
 
 // Parse
 $my_ods->Parse();
 
+//---------------------------------------
 
 // Close
 $result = $my_ods->Close();
@@ -55,10 +60,12 @@ if ($result == FALSE)
     return;
 }
 
+//---------------------------------------
 
 // Sheets Count
 echo "Sheets in File: " . $my_ods->SheetCount . $nl;
 
+//---------------------------------------
 
 // Columns Count
 echo "Columns in Sheets: ";
@@ -68,6 +75,7 @@ foreach ($my_ods->Sheets as $k => $v)
 }
 echo $nl;
 
+//---------------------------------------
 
 // Rows Count
 echo "Rows in Sheets: ";
@@ -77,6 +85,7 @@ foreach ($my_ods->Sheets as $k => $v)
 }
 echo $nl;
 
+//---------------------------------------
 
 // Show Tables (hidden Cells are shown as if no span enabled)
 echo $nl;
@@ -88,7 +97,7 @@ for ($i = 1; $i <= $my_ods->SheetCount; $i++)
     echo "Used Cols: from " . $my_ods->Sheets[$i][ODS::FIRST_USED_COL] . " to " . $my_ods->Sheets[$i][ODS::LAST_USED_COL] . '.' . $nl;
     echo "Used Rows: from " . $my_ods->Sheets[$i][ODS::FIRST_USED_ROW] . " to " . $my_ods->Sheets[$i][ODS::LAST_USED_ROW] . '.' . $nl;
     
-    echo "<table border='1' cellpadding='0' cellspacing='0'>";
+    echo "<table border='1' cellpadding='1' cellspacing='0'>";
     for ($j = $my_ods->Sheets[$i][ODS::FIRST_USED_ROW]; $j <= $my_ods->Sheets[$i][ODS::LAST_USED_ROW]; $j++)
     {
         echo "<tr>";
@@ -108,12 +117,71 @@ for ($i = 1; $i <= $my_ods->SheetCount; $i++)
                 $val = htmlentities($val, ENT_SUBSTITUTE | ENT_HTML5, 'UTF-8');
             }
             
-            echo "<td>$val</td>";
+            echo "<td>$val</td>\r\n";
         }
-        echo "</tr>";
+        echo "</tr>\r\n";
     }
     echo "</table>" . $nl;
 }
+
+//---------------------------------------
+
+// Get a Cell
+echo "<b>Get Cell Examples.</b>$nl";
+$val = $my_ods->GetCell(1, 1, 1);
+echo "Cell on Sheet [1], at Row [1], at Column [1] is: $val" . $nl;
+$val = $my_ods->GetCell(2, 8, 4);
+echo "Cell on Sheet [2], at Row [8], at Column [4] is: $val" . $nl;
+$val = $my_ods->GetCell(5, 16, 33);
+if ( !is_null($val) )
+{
+    echo "Cell on Sheet [5], at Row [16], at Column [33] is: $val" . $nl;
+}
+else
+{
+    echo "Cell on Sheet [5], at Row [16], at Column [33] is not set!" . $nl;
+}
+echo $nl;
+
+//---------------------------------------
+
+// Get Used Range of a Sheet and show it
+echo "<b>Used Range of Sheet # 2.</b>$nl";
+echo "(Set Cells are in light green Color, non-set Cells are grey)$nl";
+$range = $my_ods->GetUsedRange(2);
+if ( is_null($range) )
+{
+    echo "The Range is not set!$nl";
+}
+else
+{
+    $i_max = $range[ODS::ROW_COUNT];
+    $j_max = $range[ODS::COL_COUNT];
+    
+    echo "<table border='1' cellpadding='1' cellspacing='0'>";
+    for ($i = 1; $i <= $i_max; $i++)
+    {
+        echo "<tr>";
+        for ($j = 1; $j <= $j_max; $j++)
+        {
+            $val = $range[$i][$j];
+            if ( is_null( $val ) )
+            {
+                $val = '&nbsp;';
+                $bg = 'grey';
+            }
+            else
+            {
+                $bg = 'lightgreen';
+            }
+            echo "<td bgcolor='$bg'>$val</td>\r\n";
+        }
+        echo "</tr>\r\n";
+    }
+    echo "</table>" . $nl;
+}
+
+//---------------------------------------
 
 echo "</body></html>";
 

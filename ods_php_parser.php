@@ -4,7 +4,7 @@
     
     // Simple ODS PHP Parser.
     
-    // Version: 0.1.
+    // Version: 0.2.
     // Date: 2017-05-09.
     // Author: McArcher.
 
@@ -432,7 +432,90 @@ class ODS
             }
         }
     }
+    
+    //---------------------------------------
+    
+    public function GetCell($SheetN, $RowN, $ColN)
+    {
+        // Gets a Cell if it is set. 
+        // Returns NULL if the Cell is not set.
+        
+        if ( isset( $this->Sheets[$SheetN][self::CELLS][$RowN][$ColN][self::VALUE] ) )
+        {
+            return $this->Sheets[$SheetN][self::CELLS][$RowN][$ColN][self::VALUE];
+        }
+        else
+        {
+            return NULL;
+        }
+    }
+    
+    //---------------------------------------
+    
+    public function GetUsedRange($SheetN)
+    {
+        // Gets a Used Range of Cells. 
+        // Returns NULL if all the Cells are not set or Sheet does not exist.
+        
+        $cellExists;
+        $UsedRange;
+        $y; $y_max; $y_min; // Row # in Sheets Array
+        $x; $x_max; $x_min; // Column # in Sheets Array
+        $i;                 // Row # in Used Range
+        $j;                 // Column # in Used Range
+        
+        // Sheet exists?
+        if ( !isset( $this->Sheets[$SheetN] ) )
+        {
+            return NULL;
+        }
+        
+        $cellExists = FALSE;
+        $UsedRange = array();
 
+        $y_min = $this->Sheets[$SheetN][self::FIRST_USED_ROW];
+        $y_max = $this->Sheets[$SheetN][self::LAST_USED_ROW];
+        $x_min = $this->Sheets[$SheetN][self::FIRST_USED_COL];
+        $x_max = $this->Sheets[$SheetN][self::LAST_USED_COL];
+        
+        $y = $y_min;
+        $i = 1;
+        while ($y <= $y_max)
+        {
+            $x = $x_min;
+            $j = 1;
+            while ($x <= $x_max)
+            {
+                if ( isset( $this->Sheets[$SheetN][self::CELLS][$y][$x][self::VALUE] ) )
+                {
+                    $cellExists = TRUE;
+                    $UsedRange[$i][$j] = $this->Sheets[$SheetN][self::CELLS][$y][$x][self::VALUE];
+                }
+                else
+                {
+                    $UsedRange[$i][$j] = NULL;
+                }
+                $x++;
+                $j++;
+            }                
+            $y++;
+            $i++;
+        }
+        
+        // Set 'COL_COUNT' & 'ROW_COUNT' and Return
+        if ( $cellExists )
+        {
+            $UsedRange[self::COL_COUNT] = $x_max - $x_min + 1;
+            $UsedRange[self::ROW_COUNT] = $y_max - $y_min + 1;
+            
+            return $UsedRange;
+        }
+        else
+        {
+            return NULL;
+        }
+    }
+    
     //---------------------------------------
 
 } // End of Class 'ODS'

@@ -139,7 +139,7 @@ class ODS
         
         if (!$result)
         {
-            echo "Error! Cannot deleting temporary folder $dir_new inside $dir_tmp! 'unlink' failed."; //
+            echo "Error deleting temporary folder $dir_new inside $dir_tmp! 'unlink' failed."; //
             return FALSE;
         }        
         

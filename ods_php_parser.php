@@ -246,7 +246,7 @@ class ODS
         
         // Examine Tags
         // N.B.: '$this' is an Object of 'ODS' Class, not the XML-Parser.
-        if($tagName == self::TAG_TABLE)
+        if ($tagName == self::TAG_TABLE)
         {
             $this->SheetCount++;
             $this->currentSheet = $this->SheetCount;   
@@ -311,7 +311,7 @@ class ODS
         
         $tagName = strtolower($tagName);
         
-        if($tagName == self::TAG_TABLE)
+        if ($tagName == self::TAG_TABLE)
         {
             $this->currentSheet = 0; // Between Sheets is nothing
             $this->currentCol = 0;

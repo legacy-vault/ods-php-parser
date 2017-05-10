@@ -1,6 +1,6 @@
 <?php
 
-    // ods_php_parser.php
+    // ods_php_parser.php*
     
     // Simple ODS PHP Parser.
     
